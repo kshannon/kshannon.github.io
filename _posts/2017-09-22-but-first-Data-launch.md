@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "New blog, but first, Data. "
+title: New blog, but first, Data.
 date: 2017-09-22
 ---
 
