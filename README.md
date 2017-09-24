@@ -35,3 +35,12 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+### Notes
+cd to root dir of local Jekyll site repo.
+Run site locally:
+$ bundle exec jekyll serve 
+Preview local site at http://localhost:4000
+
+https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
+https://help.github.com/articles/user-organization-and-project-pages/
