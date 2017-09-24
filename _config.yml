@@ -1,4 +1,11 @@
+# Site settings
 name: Kyle Shannon, Data Scientist
+description: "Trying to decipher order from the chaos"
+baseurl: ""
+url: "http://kshannon.github.io"
+twitter_username: ButFirstData
+github_username:  kshannon
+
+# Build Settings
 markdown: kramdown
-theme: jekyll-theme-cayman
 permalink: /blog/:year/:month/:day/:title

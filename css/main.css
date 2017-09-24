@@ -33,11 +33,55 @@ footer {
     font-size: .8em;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
+/*ul.posts {
+    margin: 20px auto 40px;
     font-size: 1.5em;
 }
 
 ul.posts li {
     list-style: none;
 }
+*/
+
+/*Blog Page*/
+/*-----------------------------------------------*/
+/*.home h1 { margin-bottom: 25px; }*/
+
+/*get rid of bullet*/
+.posts {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+/*space between post list elements*/
+.posts li {
+  margin-bottom: 30px;
+}
+
+.posts .post-link {
+  font-family:'Helvetica', 'Arial', 'Sans-Serif';
+  font-size: 26px;
+  letter-spacing: -1px;
+  line-height: 1;
+  color: #0000EE
+}
+
+.posts .post-date {
+  font-family:'Helvetica', 'Arial', 'Sans-Serif';
+  display: block;
+  font-size: 20px;
+  color: #818181;
+  margin-bottom: 2px;
+}
+
+.posts .post-excerpt {
+  font-family:'Helvetica', 'Arial', 'Sans-Serif';
+  font-size: 20px;
+  margin: 0px;
+  padding-top: 8px;
+}
+/*-----------------------------------------------*/
+
+
+
+
