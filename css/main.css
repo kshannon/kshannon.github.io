@@ -12,9 +12,13 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+nav ul li a, footer ul li a{
+    color: #999;
+}
 a {
     text-decoration: none;
-    color: #999;
+    color: #0000EE;
+    /*color: #999;*/
 }
 a:hover {
     text-decoration: underline;
@@ -42,6 +46,33 @@ ul.posts li {
     list-style: none;
 }
 */
+
+
+/*Default Layout*/
+/*-----------------------------------------------*/
+.container{
+  margin-bottom: 50px;
+}
+/*-----------------------------------------------*/
+
+
+
+/*About Page*/
+/*-----------------------------------------------*/
+
+/*-----------------------------------------------*/
+
+
+
+/*CV Page*/
+/*-----------------------------------------------*/
+.cv .resume-link {
+  font-size: 28px;
+  color: #0000EE;
+}
+/*-----------------------------------------------*/
+
+
 
 /*Blog Page*/
 /*-----------------------------------------------*/

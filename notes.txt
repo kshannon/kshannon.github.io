@@ -1,0 +1,9 @@
+to do:
+- add twtter handle
+- open links to new tab
+- finish About page
+- Update Resume
+- link or display PDF resume in CV for now
+- Add photo to about me
+- remove CV, make link in About.
+- Add to home, presentations, papers, projects

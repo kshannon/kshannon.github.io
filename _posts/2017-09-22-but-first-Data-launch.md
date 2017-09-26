@@ -6,7 +6,8 @@ categories: admin
 ---
 First post for my new blog: <em>but first, Data</em> and its accompanying github page site.
 
-Check out my <a href="/about">About</a> for info on current projects and my journey from neuroscience into data science/machine learning. That is all for now. Looking forward to working on some fun projects!
+Check out my <a href="/about">Home</a> page for info on current projects. This blog will serve as a source of information for other budding data scientists to learn more about the field and how I transitioned from neuroscience. I will post about current projects, technical challenges, and some, hopefully, cool tips and tricks readers might find refreshing. Lastly, I may occasionally discuss the current state of data science as a field.
 
-Cheers,
-Kyle
+That is all for now. Looking forward to working on some fun projects!
+
+Cheers,<br/>Kyle
