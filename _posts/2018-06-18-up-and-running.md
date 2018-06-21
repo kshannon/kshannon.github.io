@@ -1,15 +1,16 @@
-
-
-
-#Up and Running with Ubuntu, Nvidia, Cuda, CuDNN, TensorFlow, and Pytorch
-###An in-depth look into getting TensorFlow and Pytorch working on Ubuntu 18.04 with your Nvidia GPU.
-#####Kyle M Shannon - June 2018
+---
+layout: post
+title: "Up and Running with Ubuntu, Nvidia, Cuda, CuDNN, TensorFlow, and Pytorch"
+date: 2018-06-20
+categories: admin
+---
+An in-depth look into getting TensorFlow and Pytorch working on Ubuntu 18.04 with your Nvidia GPU.
 
 Building and training deep learning models is laborious task. Ensuring your environments, packages, and GPUs work in harmony adds to that effort. This guide gets fairly in-depth to help users that are relatively new to Linux. Ubuntu's latest long term support (LTS) 18.04 was released around the end of April, so I decided to wipe my current Linux box and start from scratch. Including getting my deep learning environments installed. As 18.04 is relatively new, there may be some confusion when determining which packages to install. hopefully this post helps alleviates those worries. I walk through the process slowly, and provide all terminal inputs and most of the output. I also not just show what I am doing, but try to explain why. 
 
 Hopefully you find this helpful! Let's get into it...
 
-##Contents
+## Contents
 - [Preamble](#Preamble)
 - [GPU Compatibility](#GPU_Compatibility)
 - [Nvidia Drivers](#Nvidia_Drivers)
@@ -19,7 +20,7 @@ Hopefully you find this helpful! Let's get into it...
 
 <a name="Preamble"></a>
 
-###Preamble
+### Preamble
 
 **Hardware of Choice**
 - Nvidia GTX 1070 (I assume you have a Nvidia GPU)
@@ -55,7 +56,7 @@ $ run this command #comment about the command, do not include this
 
 <a name="GPU Compatibility"></a>
 
-###GPU Compatibility
+### GPU Compatibility
 
 First order of business is ensuring your GPU has a high enough compute score. TensorFlow's documentation states:
 
@@ -109,7 +110,7 @@ $ nvidia-smi
 ```
 Your output should look similar to the one below, except your driver version number may be different, as well as your GPU and processes. If it does congratulations! You have Nvidia drivers.
 
-<img src="../media/imgs/062018-nvidia-smi.png" alt="nvidia-smi" width="800px"/>
+<img src="media/imgs/062018-nvidia-smi.png" alt="nvidia-smi" width="800px"/>
 
 To wrap up the driver portion, you are going to make sure APT doesn't upgrade your driver. Remember you added the PPA to APT and now it is responsible for managing this software. It is important that you stop the software we are installing from upgrading.
 
@@ -150,7 +151,7 @@ $ sudo apt install linux-headers-$(uname -r)
 ```
 Now you need to download CUDA and install it. You can grab CUDA 9.0 from this official [Nvidia archive](https://developer.nvidia.com/cuda-90-download-archive). Look at the image below to see which options to select.
 
-<img src="../media/imgs/062018-cuda90.png" alt="cuda90" width="800px"/>
+<img src="media/imgs/062018-cuda90.png" alt="cuda90" width="800px"/>
 
 Once it is finished downloading run the following:
 ```shell
@@ -202,7 +203,7 @@ If this is all good, then CUDA is installed and working correctly. GCC is still 
 Check out the official [docs](https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html#installcuda) on CuDNN. We will be stepping through these. First you need to make sure you have created a free account with [Nvidia's Developer Program.](https://developer.nvidia.com) Once you sign up, verify your email and are ready to go, you can sign in from [this link](https://developer.nvidia.com/rdp/cudnn-download) and it should take you directly to the download CuDNN page. Follow the steps in the images below to find the specific CuDNN version. I choose 7.05 based on what TensorFlow suggested at the time.
 
 Agree to the terms and thyen look at the bottom of the list for a link to archived cuDNN releases. 
-<img src="../media/imgs/062018-cudnn1.png" alt="cudnn1" width="800px"/>
+<img src="media/imgs/062018-cudnn1.png" alt="cudnn1" width="800px"/>
 
 This will take you to the archives, where you can now look for cuDNN v7.0.5 for CUDA 9.0.
 Download all three of the following .deb files:
@@ -210,7 +211,7 @@ Download all three of the following .deb files:
 - cuDNN v7.0.5 Developer Library for Ubuntu16.04 (Deb)
 - cuDNN v7.0.5 Code Samples and User Guide for Ubuntu16.04 (Deb)
 
-<img src="../media/imgs/062018-cudnn2.png" alt="cudnn2" width="800px"/>
+<img src="media/imgs/062018-cudnn2.png" alt="cudnn2" width="800px"/>
 
 After you have downloaded them, run these next commands: 
 ```shell
@@ -367,7 +368,7 @@ $ conda source activate pytorch
 ```
 Head over to the pytorch website and generate a command to install pytorch. The below image shows the options I selected:
 
-<img src="../media/imgs/062018-pytorch.png" alt="PyTorch Options" width="800px"/>
+<img src="media/imgs/062018-pytorch.png" alt="PyTorch Options" width="800px"/>
 
 ```shell
 $ conda install pytorch torchvision cuda90 -c pytorch
@@ -400,5 +401,4 @@ Useful sites for good quality info I found were StackExchange and the Nvidia [de
 
 Thanks for slogging through this post. Have fun deep learning!
 
-Cheers,
-Kyle
+Cheers,<br/>Kyle
