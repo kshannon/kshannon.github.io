@@ -9,3 +9,4 @@ github_username:  kshannon
 # Build Settings
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+theme: jekyll-theme-minimal
